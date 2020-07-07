@@ -1,0 +1,291 @@
+{
+  "uid" : "bdd5301892b0e9a9",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_tealogin4#test_login",
+  "historyId" : "4d9f946e44b92c790e8250bfe5764b97",
+  "time" : {
+    "start" : 1593770250488,
+    "stop" : 1593770250559,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1593770250488,
+        "stop" : 1593770250488,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "老师账号登录",
+      "time" : {
+        "start" : 1593770250488,
+        "stop" : 1593770250559,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "story",
+    "value" : "老师账号为空，密码为空登录"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_tealogin4"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "8540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_tealogin4"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4ab462d4071be371",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593761111246,
+        "stop" : 1593761111330,
+        "duration" : 84
+      }
+    }, {
+      "uid" : "5c6643cef9293df4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593755381660,
+        "stop" : 1593755381762,
+        "duration" : 102
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "2987e41f0a30e964",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/52/allure/#testresult/2987e41f0a30e964",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "39bf7dfdddf7be96",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/51/allure/#testresult/39bf7dfdddf7be96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "73ee669ea994b03e",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/50/allure/#testresult/73ee669ea994b03e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "5395a313a585b034",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/49/allure/#testresult/5395a313a585b034",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "9e986508ac244fcf",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/48/allure/#testresult/9e986508ac244fcf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "a08cfbd5332c629f",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/47/allure/#testresult/a08cfbd5332c629f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "de5046ba4e667aeb",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/46/allure/#testresult/de5046ba4e667aeb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "df14d3ebf5a1e807",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/45/allure/#testresult/df14d3ebf5a1e807",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "e43efd1e2129688b",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/44/allure/#testresult/e43efd1e2129688b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "466ee37b0eebf80c",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/43/allure/#testresult/466ee37b0eebf80c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "1c032fc60c845e76",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/42/allure/#testresult/1c032fc60c845e76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593761111246,
+          "stop" : 1593761111330,
+          "duration" : 84
+        }
+      }, {
+        "uid" : "ea4949e8929836a2",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/41/allure/#testresult/ea4949e8929836a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593755381660,
+          "stop" : 1593755381762,
+          "duration" : 102
+        }
+      }, {
+        "uid" : "49053a3af96fbf2",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/40/allure/#testresult/49053a3af96fbf2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593755381660,
+          "stop" : 1593755381762,
+          "duration" : 102
+        }
+      }, {
+        "uid" : "b8224384ee503a05",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/14/allure/#testresult/b8224384ee503a05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593687610545,
+          "stop" : 1593687610703,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "7637dce30bd1c8a3",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/13/allure/#testresult/7637dce30bd1c8a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593687610545,
+          "stop" : 1593687610703,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "8b4749d91c8c2949",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/12/allure/#testresult/8b4749d91c8c2949",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593687610545,
+          "stop" : 1593687610703,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "52d6ed25136d5848",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/11/allure/#testresult/52d6ed25136d5848",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593687610545,
+          "stop" : 1593687610703,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "1a56baf83a026ed",
+        "reportUrl" : "http://localhost:8080/job/allure%20report/10/allure/#testresult/1a56baf83a026ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593687610545,
+          "stop" : 1593687610703,
+          "duration" : 158
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bdd5301892b0e9a9.json",
+  "parameterValues" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+}

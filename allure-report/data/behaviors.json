@@ -1,0 +1,210 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "线下客户端登录业务",
+    "children" : [ {
+      "name" : "学生账号正确，密码正确登录",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "686f886a0a7d4066",
+        "parentUid" : "c9a8694aa281664b22b9c5863c375690",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770247550,
+          "stop" : 1593770247832,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+      }, {
+        "name" : "登录成功",
+        "uid" : "a4feea46b9cdc239",
+        "parentUid" : "c9a8694aa281664b22b9c5863c375690",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770247843,
+          "stop" : 1593770248107,
+          "duration" : 264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000102, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+      } ],
+      "uid" : "c9a8694aa281664b22b9c5863c375690"
+    }, {
+      "name" : "学生账号正确，密码错误登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "5510de25ab34b06a",
+        "parentUid" : "ae6c722cde5863dc90bae817f1ecc844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248113,
+          "stop" : 1593770248336,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "ee41a57e1f09dabc",
+        "parentUid" : "ae6c722cde5863dc90bae817f1ecc844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248348,
+          "stop" : 1593770248584,
+          "duration" : 236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+      } ],
+      "uid" : "ae6c722cde5863dc90bae817f1ecc844"
+    }, {
+      "name" : "学生账号正确，密码为空登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "d6b0a3d8d98fe3ec",
+        "parentUid" : "103fdfbf206b08d873cb475c7a3090de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248595,
+          "stop" : 1593770248702,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      } ],
+      "uid" : "103fdfbf206b08d873cb475c7a3090de"
+    }, {
+      "name" : "学生账号为空，密码为空登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "887cf5c8d9bf6aff",
+        "parentUid" : "b500ca526474d5662c4584337da0d5fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248709,
+          "stop" : 1593770248804,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+      } ],
+      "uid" : "b500ca526474d5662c4584337da0d5fa"
+    }, {
+      "name" : "老师账号正确，密码正确登录",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "9f6c2ba3f43e53f1",
+        "parentUid" : "74c5dda1d3adc011d37ba7ffab29ddbf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248815,
+          "stop" : 1593770249121,
+          "duration" : 306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'expectedmsg': 'ok'}" ]
+      }, {
+        "name" : "登录成功",
+        "uid" : "1bceb1bac04b500b",
+        "parentUid" : "74c5dda1d3adc011d37ba7ffab29ddbf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249124,
+          "stop" : 1593770249688,
+          "duration" : 564
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'ceshi002', 'expectedmsg': 'ok'}" ]
+      } ],
+      "uid" : "74c5dda1d3adc011d37ba7ffab29ddbf"
+    }, {
+      "name" : "老师账号正确，密码错误登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "4704af84224de875",
+        "parentUid" : "a211abce2b8c70c2898ccb4b761cc2f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249699,
+          "stop" : 1593770249949,
+          "duration" : 250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "6a053d012afa0996",
+        "parentUid" : "a211abce2b8c70c2898ccb4b761cc2f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249955,
+          "stop" : 1593770250169,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+      } ],
+      "uid" : "a211abce2b8c70c2898ccb4b761cc2f2"
+    }, {
+      "name" : "老师账号正确，密码为空登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "a86709d3fb9fd030",
+        "parentUid" : "a5019b8920b98f4f2d0c23a4115b6fb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250181,
+          "stop" : 1593770250379,
+          "duration" : 198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "acce2e8ab3fdc05c",
+        "parentUid" : "a5019b8920b98f4f2d0c23a4115b6fb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250391,
+          "stop" : 1593770250484,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      } ],
+      "uid" : "a5019b8920b98f4f2d0c23a4115b6fb2"
+    }, {
+      "name" : "老师账号为空，密码为空登录",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "bdd5301892b0e9a9",
+        "parentUid" : "6f9a1da3111e4e85cf78aac79a2a20cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250488,
+          "stop" : 1593770250559,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+      } ],
+      "uid" : "6f9a1da3111e4e85cf78aac79a2a20cd"
+    } ],
+    "uid" : "aa468989bff2277b58dc97d304987d18"
+  } ]
+}

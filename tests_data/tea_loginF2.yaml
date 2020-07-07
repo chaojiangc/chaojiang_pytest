@@ -1,0 +1,12 @@
+#正确老师账号，密码为空
+
+
+-
+ username: 'kehuduanjiaoshi001'
+ pwd: ''
+ expectedmsg: 'password_empty'
+
+-
+  username: "kehuduanjiaoshi002"
+  pwd: ''
+  expectedmsg: 'password_empty'

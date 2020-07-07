@@ -1,0 +1,16 @@
+
+#正确的学生账号密码
+
+
+-
+ username: 13300000100
+ pwd: 123456
+ expectedmsg: 'ok'
+
+-
+ username: 13300000102
+ pwd: 123456
+ expectedmsg: 'ok'
+
+
+

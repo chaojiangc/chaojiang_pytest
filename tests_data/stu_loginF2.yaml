@@ -1,0 +1,5 @@
+#学生账号正确密码空
+-
+  username: 13300000100
+  pwd: ''
+  expectedmsg: 'password_empty'

@@ -1,0 +1,12 @@
+#正确的老师账号密码
+
+
+-
+ username: 'kehuduanjiaoshi001'
+ pwd: "ceshi001"
+ expectedmsg: 'ok'
+
+-
+ username: "kehuduanjiaoshi002"
+ pwd: "ceshi002"
+ expectedmsg: 'ok'

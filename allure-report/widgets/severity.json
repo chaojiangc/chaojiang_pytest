@@ -1,0 +1,131 @@
+[ {
+  "uid" : "bdd5301892b0e9a9",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770250488,
+    "stop" : 1593770250559,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acce2e8ab3fdc05c",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770250391,
+    "stop" : 1593770250484,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "887cf5c8d9bf6aff",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770248709,
+    "stop" : 1593770248804,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4feea46b9cdc239",
+  "name" : "登录成功",
+  "time" : {
+    "start" : 1593770247843,
+    "stop" : 1593770248107,
+    "duration" : 264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4704af84224de875",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770249699,
+    "stop" : 1593770249949,
+    "duration" : 250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "686f886a0a7d4066",
+  "name" : "登录成功",
+  "time" : {
+    "start" : 1593770247550,
+    "stop" : 1593770247832,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1bceb1bac04b500b",
+  "name" : "登录成功",
+  "time" : {
+    "start" : 1593770249124,
+    "stop" : 1593770249688,
+    "duration" : 564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a86709d3fb9fd030",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770250181,
+    "stop" : 1593770250379,
+    "duration" : 198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee41a57e1f09dabc",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770248348,
+    "stop" : 1593770248584,
+    "duration" : 236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5510de25ab34b06a",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770248113,
+    "stop" : 1593770248336,
+    "duration" : 223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a053d012afa0996",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770249955,
+    "stop" : 1593770250169,
+    "duration" : 214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6b0a3d8d98fe3ec",
+  "name" : "登录失败",
+  "time" : {
+    "start" : 1593770248595,
+    "stop" : 1593770248702,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f6c2ba3f43e53f1",
+  "name" : "登录成功",
+  "time" : {
+    "start" : 1593770248815,
+    "stop" : 1593770249121,
+    "duration" : 306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

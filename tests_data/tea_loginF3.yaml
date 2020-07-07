@@ -1,0 +1,5 @@
+#老师账号空,密码空
+-
+  username: ''
+  pwd: ''
+  expectedmsg: 'uname_empty'

@@ -1,0 +1,12 @@
+#错误的老师密码
+
+
+-
+ username: 'kehuduanjiaoshi001'
+ pwd: 1
+ expectedmsg: '账号密码错误'
+
+-
+  username: "kehuduanjiaoshi002"
+  pwd: abc
+  expectedmsg: '账号密码错误'

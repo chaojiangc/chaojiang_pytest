@@ -1,0 +1,210 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests.client_songshuai",
+    "children" : [ {
+      "name" : "test_stulogin1",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "686f886a0a7d4066",
+        "parentUid" : "5e10ea16bd16ad27b08f5c8ff5e5cedd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770247550,
+          "stop" : 1593770247832,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+      }, {
+        "name" : "登录成功",
+        "uid" : "a4feea46b9cdc239",
+        "parentUid" : "5e10ea16bd16ad27b08f5c8ff5e5cedd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770247843,
+          "stop" : 1593770248107,
+          "duration" : 264
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000102, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+      } ],
+      "uid" : "5e10ea16bd16ad27b08f5c8ff5e5cedd"
+    }, {
+      "name" : "test_stulogin2",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "5510de25ab34b06a",
+        "parentUid" : "fe3bf6c485dafb83d66e3cd655f1577b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248113,
+          "stop" : 1593770248336,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "ee41a57e1f09dabc",
+        "parentUid" : "fe3bf6c485dafb83d66e3cd655f1577b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248348,
+          "stop" : 1593770248584,
+          "duration" : 236
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+      } ],
+      "uid" : "fe3bf6c485dafb83d66e3cd655f1577b"
+    }, {
+      "name" : "test_stulogin3",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "d6b0a3d8d98fe3ec",
+        "parentUid" : "71de808a705c6a3f3d759d0df67cf925",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248595,
+          "stop" : 1593770248702,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 13300000100, 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      } ],
+      "uid" : "71de808a705c6a3f3d759d0df67cf925"
+    }, {
+      "name" : "test_stulogin4",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "887cf5c8d9bf6aff",
+        "parentUid" : "ad27029a5dbe126ae7369e2b07bdc2ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248709,
+          "stop" : 1593770248804,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+      } ],
+      "uid" : "ad27029a5dbe126ae7369e2b07bdc2ef"
+    }, {
+      "name" : "test_tealogin1",
+      "children" : [ {
+        "name" : "登录成功",
+        "uid" : "9f6c2ba3f43e53f1",
+        "parentUid" : "9cac33ba2544dfbe1367989ed03f039a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770248815,
+          "stop" : 1593770249121,
+          "duration" : 306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'expectedmsg': 'ok'}" ]
+      }, {
+        "name" : "登录成功",
+        "uid" : "1bceb1bac04b500b",
+        "parentUid" : "9cac33ba2544dfbe1367989ed03f039a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249124,
+          "stop" : 1593770249688,
+          "duration" : 564
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'ceshi002', 'expectedmsg': 'ok'}" ]
+      } ],
+      "uid" : "9cac33ba2544dfbe1367989ed03f039a"
+    }, {
+      "name" : "test_tealogin2",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "4704af84224de875",
+        "parentUid" : "608ebedfb933649b6216c1b39adde5ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249699,
+          "stop" : 1593770249949,
+          "duration" : 250
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "6a053d012afa0996",
+        "parentUid" : "608ebedfb933649b6216c1b39adde5ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770249955,
+          "stop" : 1593770250169,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+      } ],
+      "uid" : "608ebedfb933649b6216c1b39adde5ac"
+    }, {
+      "name" : "test_tealogin3",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "a86709d3fb9fd030",
+        "parentUid" : "04dd303ba76c8bbe6dc26cfccc9fc117",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250181,
+          "stop" : 1593770250379,
+          "duration" : 198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      }, {
+        "name" : "登录失败",
+        "uid" : "acce2e8ab3fdc05c",
+        "parentUid" : "04dd303ba76c8bbe6dc26cfccc9fc117",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250391,
+          "stop" : 1593770250484,
+          "duration" : 93
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+      } ],
+      "uid" : "04dd303ba76c8bbe6dc26cfccc9fc117"
+    }, {
+      "name" : "test_tealogin4",
+      "children" : [ {
+        "name" : "登录失败",
+        "uid" : "bdd5301892b0e9a9",
+        "parentUid" : "98f576d51974eb977d7b9b7082315785",
+        "status" : "passed",
+        "time" : {
+          "start" : 1593770250488,
+          "stop" : 1593770250559,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+      } ],
+      "uid" : "98f576d51974eb977d7b9b7082315785"
+    } ],
+    "uid" : "tests.client_songshuai"
+  } ]
+}
