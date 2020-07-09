@@ -6,7 +6,7 @@ import pytest,allure
 from tests_utills.get_yaml import get_yaml_stuf
 from songshu_code.songshuai_api import amg
 
-
+#test
 @allure.feature("线下客户端登录业务")
 @allure.story("学生账号正确，密码错误登录")
 @allure.title("登录失败")
