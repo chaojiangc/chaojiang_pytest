@@ -1,0 +1,100 @@
+{
+  "uid" : "726f8bb31ea54d81",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_stulogin2#test_login",
+  "historyId" : "1f4e416af0281212f194e28f5a4db211",
+  "time" : {
+    "start" : 1593755379555,
+    "stop" : 1593755379813,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1593755379556,
+        "stop" : 1593755379556,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "学生账号登录",
+      "time" : {
+        "start" : 1593755379556,
+        "stop" : 1593755379813,
+        "duration" : 257
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "学生账号正确，密码错误登录"
+  }, {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_stulogin2"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "7128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_stulogin2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号密码错误'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "726f8bb31ea54d81.json",
+  "parameterValues" : [ "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+}

@@ -2,4 +2,5 @@
 -
   username: ''
   pwd: ''
+  productkey: "aac9d32a0eed820769aa1f120e6796db"
   expectedmsg: 'uname_empty'

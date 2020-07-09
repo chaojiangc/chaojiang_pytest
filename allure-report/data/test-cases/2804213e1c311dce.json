@@ -1,0 +1,100 @@
+{
+  "uid" : "2804213e1c311dce",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_tealogin3#test_login",
+  "historyId" : "96984c06b7ce9bb7e497445028a7ba24",
+  "time" : {
+    "start" : 1594286355432,
+    "stop" : 1594286355518,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1594286355433,
+        "stop" : 1594286355433,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "老师账号登录",
+      "time" : {
+        "start" : 1594286355433,
+        "stop" : 1594286355518,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师账号正确，密码为空登录"
+  }, {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_tealogin3"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "1068-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_tealogin3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'password_empty'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2804213e1c311dce.json",
+  "parameterValues" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'password_empty'}" ]
+}

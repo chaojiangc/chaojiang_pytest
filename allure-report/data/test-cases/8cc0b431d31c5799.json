@@ -1,0 +1,106 @@
+{
+  "uid" : "8cc0b431d31c5799",
+  "name" : "登录成功",
+  "fullName" : "tests.client_songshuai.test_tealogin1#test_login",
+  "historyId" : "7d8b990685b07a27a6d20201e1896f99",
+  "time" : {
+    "start" : 1594282467478,
+    "stop" : 1594282468323,
+    "duration" : 845
+  },
+  "status" : "broken",
+  "statusMessage" : "UnicodeEncodeError: 'gbk' codec can't encode character '\\xa9' in position 759089: illegal multibyte sequence",
+  "statusTrace" : "datas = {'expectedmsg': 'ok', 'pwd': 'ceshi001', 'username': 'kehuduanjiaoshi001'}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"老师账号正确，密码正确登录\")\n    @allure.title(\"登录成功\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_tear())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'], datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('老师账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/teclogin\"\n>           responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n\ntests\\client_songshuai\\test_tealogin1.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsongshu_code\\songshuai_api.py:111: in login_stu\n    self._printResponse(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <songshu_code.songshuai_api.AMG object at 0x00000000024EAD68>\nresponse = <Response [500]>\n\n    def _printResponse(self, response):\n        print(\"----开始打印http响应消息----\")\n        print('状态码:')\n        print(response.status_code)\n    \n        print('响应headers:')\n        for k, v in response.headers.items():\n            print(f'{k}:{v}')\n    \n>       print(response.text)\nE       UnicodeEncodeError: 'gbk' codec can't encode character '\\xa9' in position 759089: illegal multibyte sequence\n\nsongshu_code\\songshuai_api.py:24: UnicodeEncodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "UnicodeEncodeError: 'gbk' codec can't encode character '\\xa9' in position 759089: illegal multibyte sequence",
+    "statusTrace" : "datas = {'expectedmsg': 'ok', 'pwd': 'ceshi001', 'username': 'kehuduanjiaoshi001'}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"老师账号正确，密码正确登录\")\n    @allure.title(\"登录成功\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_tear())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'], datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('老师账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/teclogin\"\n>           responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n\ntests\\client_songshuai\\test_tealogin1.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsongshu_code\\songshuai_api.py:111: in login_stu\n    self._printResponse(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <songshu_code.songshuai_api.AMG object at 0x00000000024EAD68>\nresponse = <Response [500]>\n\n    def _printResponse(self, response):\n        print(\"----开始打印http响应消息----\")\n        print('状态码:')\n        print(response.status_code)\n    \n        print('响应headers:')\n        for k, v in response.headers.items():\n            print(f'{k}:{v}')\n    \n>       print(response.text)\nE       UnicodeEncodeError: 'gbk' codec can't encode character '\\xa9' in position 759089: illegal multibyte sequence\n\nsongshu_code\\songshuai_api.py:24: UnicodeEncodeError",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1594282467478,
+        "stop" : 1594282467478,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "老师账号登录",
+      "time" : {
+        "start" : 1594282467478,
+        "stop" : 1594282468322,
+        "duration" : 844
+      },
+      "status" : "broken",
+      "statusMessage" : "UnicodeEncodeError: 'gbk' codec can't encode character '\\xa9' in position 759089: illegal multibyte sequence\n",
+      "statusTrace" : "  File \"D:\\pytest\\pytest_0613\\tests\\client_songshuai\\test_tealogin1.py\", line 22, in test_login\n    responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n  File \"D:\\pytest\\pytest_0613\\songshu_code\\songshuai_api.py\", line 111, in login_stu\n    self._printResponse(response)\n  File \"D:\\pytest\\pytest_0613\\songshu_code\\songshuai_api.py\", line 24, in _printResponse\n    print(response.text)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师账号正确，密码正确登录"
+  }, {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_tealogin1"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "10192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_tealogin1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'expectedmsg': 'ok'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8cc0b431d31c5799.json",
+  "parameterValues" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'expectedmsg': 'ok'}" ]
+}

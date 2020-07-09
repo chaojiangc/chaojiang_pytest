@@ -1,0 +1,106 @@
+{
+  "uid" : "134fbb813e70b72e",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_stulogin2#test_login",
+  "historyId" : "1f4e416af0281212f194e28f5a4db211",
+  "time" : {
+    "start" : 1594283732094,
+    "stop" : 1594283732279,
+    "duration" : 185
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '账户或密码错误' == '账号或密码错误'\n  - 账号或密码错误\n  ?  ^\n  + 账户或密码错误\n  ?  ^",
+  "statusTrace" : "datas = {'expectedmsg': '账号或密码错误', 'pwd': 'abc', 'username': 13300000102}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"学生账号正确，密码错误登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_stuf())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'],datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('学生账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/login\"\n            responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n            res = responses.json()\n>           assert res['msg'] == datas['expectedmsg']\nE           AssertionError: assert '账户或密码错误' == '账号或密码错误'\nE             - 账号或密码错误\nE             ?  ^\nE             + 账户或密码错误\nE             ?  ^\n\ntest_stulogin2.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '账户或密码错误' == '账号或密码错误'\n  - 账号或密码错误\n  ?  ^\n  + 账户或密码错误\n  ?  ^",
+    "statusTrace" : "datas = {'expectedmsg': '账号或密码错误', 'pwd': 'abc', 'username': 13300000102}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"学生账号正确，密码错误登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_stuf())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'],datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('学生账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/login\"\n            responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n            res = responses.json()\n>           assert res['msg'] == datas['expectedmsg']\nE           AssertionError: assert '账户或密码错误' == '账号或密码错误'\nE             - 账号或密码错误\nE             ?  ^\nE             + 账户或密码错误\nE             ?  ^\n\ntest_stulogin2.py:23: AssertionError",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1594283732094,
+        "stop" : 1594283732094,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "学生账号登录",
+      "time" : {
+        "start" : 1594283732094,
+        "stop" : 1594283732278,
+        "duration" : 184
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '账户或密码错误' == '账号或密码错误'\n  - 账号或密码错误\n  ?  ^\n  + 账户或密码错误\n  ?  ^\n",
+      "statusTrace" : "  File \"D:\\pytest\\pytest_0613\\tests\\client_songshuai\\test_stulogin2.py\", line 23, in test_login\n    assert res['msg'] == datas['expectedmsg']\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "story",
+    "value" : "学生账号正确，密码错误登录"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_stulogin2"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "9064-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_stulogin2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号或密码错误'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "134fbb813e70b72e.json",
+  "parameterValues" : [ "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号或密码错误'}" ]
+}

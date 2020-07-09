@@ -4,9 +4,11 @@
 -
  username: 'kehuduanjiaoshi001'
  pwd: "ceshi001"
+ productkey: "377eb695ceea787071a7d252def6aa4a"
  expectedmsg: 'ok'
 
 -
  username: "kehuduanjiaoshi002"
  pwd: "ceshi002"
+ productkey: "377eb695ceea787071a7d252def6aa4a"
  expectedmsg: 'ok'

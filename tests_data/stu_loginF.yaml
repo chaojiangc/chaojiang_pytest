@@ -5,10 +5,12 @@
 -
  username: 13300000100
  pwd: 1
- expectedmsg: '账号密码错误'
+ productkey: "aac9d32a0eed820769aa1f120e6796db"
+ expectedmsg: '账户或密码错误'
 
 -
   username: 13300000102
   pwd: abc
-  expectedmsg: '账号密码错误'
+  productkey: "aac9d32a0eed820769aa1f120e6796db"
+  expectedmsg: '账户或密码错误'
 

@@ -14,12 +14,12 @@ from songshu_code.songshuai_api import amg
 @pytest.mark.parametrize("datas", get_yaml_tear3())
 def test_login(datas):
     with allure.step('获得签名sign'):
-        sig = amg.get_sign(datas['username'], datas['pwd'])
+        sig = amg.get_sign(datas['username'], datas['pwd'], datas['productkey'])
         sgi1 = str(sig)
 
     with allure.step('老师账号登录'):
         url_fomal = "https://client.songshuai.com/api/teclogin"
-        responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)
+        responses = amg.login_tea(url_fomal, datas['username'], datas['pwd'], sig=sgi1)
         res = responses.json()
         assert res['msg'] == datas['expectedmsg']
 

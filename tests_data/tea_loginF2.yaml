@@ -4,9 +4,11 @@
 -
  username: 'kehuduanjiaoshi001'
  pwd: ''
+ productkey: "377eb695ceea787071a7d252def6aa4a"
  expectedmsg: 'password_empty'
 
 -
   username: "kehuduanjiaoshi002"
   pwd: ''
+  productkey: "377eb695ceea787071a7d252def6aa4a"
   expectedmsg: 'password_empty'

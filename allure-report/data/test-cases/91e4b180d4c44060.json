@@ -1,0 +1,106 @@
+{
+  "uid" : "91e4b180d4c44060",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_tealogin2#test_login",
+  "historyId" : "541318d93a5116098d55c92c2984eb7c",
+  "time" : {
+    "start" : 1594285994604,
+    "stop" : 1594285994698,
+    "duration" : 94
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '签名错误' == '账号密码错误'\n  - 账号密码错误\n  + 签名错误",
+  "statusTrace" : "datas = {'expectedmsg': '账号密码错误', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'pwd': 1, 'username': 'kehuduanjiaoshi001'}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"老师账号正确，密码错误登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_tear1())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'], datas['pwd'], datas['productkey'])\n            sgi1 = str(sig)\n    \n        with allure.step('老师账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/login\"\n            responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n            res = responses.json()\n>           assert res['msg'] == datas['expectedmsg']\nE           AssertionError: assert '签名错误' == '账号密码错误'\nE             - 账号密码错误\nE             + 签名错误\n\ntest_tealogin2.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '签名错误' == '账号密码错误'\n  - 账号密码错误\n  + 签名错误",
+    "statusTrace" : "datas = {'expectedmsg': '账号密码错误', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'pwd': 1, 'username': 'kehuduanjiaoshi001'}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"老师账号正确，密码错误登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_tear1())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'], datas['pwd'], datas['productkey'])\n            sgi1 = str(sig)\n    \n        with allure.step('老师账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/login\"\n            responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n            res = responses.json()\n>           assert res['msg'] == datas['expectedmsg']\nE           AssertionError: assert '签名错误' == '账号密码错误'\nE             - 账号密码错误\nE             + 签名错误\n\ntest_tealogin2.py:23: AssertionError",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1594285994604,
+        "stop" : 1594285994604,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "老师账号登录",
+      "time" : {
+        "start" : 1594285994604,
+        "stop" : 1594285994698,
+        "duration" : 94
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '签名错误' == '账号密码错误'\n  - 账号密码错误\n  + 签名错误\n",
+      "statusTrace" : "  File \"D:\\pytest\\pytest_0613\\tests\\client_songshuai\\test_tealogin2.py\", line 23, in test_login\n    assert res['msg'] == datas['expectedmsg']\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "老师账号正确，密码错误登录"
+  }, {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_tealogin2"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "1400-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_tealogin2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': '账号密码错误'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "91e4b180d4c44060.json",
+  "parameterValues" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': '账号密码错误'}" ]
+}

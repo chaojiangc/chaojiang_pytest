@@ -5,11 +5,13 @@
 -
  username: 13300000100
  pwd: 123456
+ productkey: "aac9d32a0eed820769aa1f120e6796db"
  expectedmsg: 'ok'
 
 -
  username: 13300000102
  pwd: 123456
+ productkey: "aac9d32a0eed820769aa1f120e6796db"
  expectedmsg: 'ok'
 
 

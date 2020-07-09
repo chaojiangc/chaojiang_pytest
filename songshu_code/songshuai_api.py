@@ -32,12 +32,12 @@ class AMG:
 
 
      #登录签名
-    def get_sign(self, username, password):
+    def get_sign(self, username, password, productkey):
 
         data = {
                 "uname": username,
                 "password": password,
-
+                "productkey": productkey
                }
         new_data = sorted(data.items())
         # print(new_data)
@@ -99,26 +99,28 @@ class AMG:
 
 
     #学生登录
-    def login_stu(self, url,username, password, sig):
+    def login_stu(self, url,username, password, sig, productkey='aac9d32a0eed820769aa1f120e6796db'):
         self.s = requests.session()
         url_formal = url
         data = {
                "uname": username,
                "password": password,
-               "sign": sig
+               "sign": sig,
+               "productkey": productkey
               }
         response = self.s.post(url_formal, data=data)
         self._printResponse(response)
         return response
 
      #老师登录
-    def login_tea(self,url, username, password, sig):
+    def login_tea(self,url, username, password, sig, productkey='377eb695ceea787071a7d252def6aa4a'):
         self.s = requests.session()
         url_formal = url
         data = {
             "uname": username,
             "password": password,
-            "sign": sig
+            "sign": sig,
+            "productkey": productkey
         }
         response = self.s.post(url_formal, data=data)
         self._printResponse(response)

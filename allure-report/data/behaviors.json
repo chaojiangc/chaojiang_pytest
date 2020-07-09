@@ -7,201 +7,201 @@
       "name" : "学生账号正确，密码正确登录",
       "children" : [ {
         "name" : "登录成功",
-        "uid" : "686f886a0a7d4066",
+        "uid" : "1063919c7b30efd9",
         "parentUid" : "c9a8694aa281664b22b9c5863c375690",
         "status" : "passed",
         "time" : {
-          "start" : 1593770247550,
-          "stop" : 1593770247832,
-          "duration" : 282
+          "start" : 1594286653369,
+          "stop" : 1594286653607,
+          "duration" : 238
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 13300000100, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+        "parameters" : [ "{'username': 13300000100, 'pwd': 123456, 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': 'ok'}" ]
       }, {
         "name" : "登录成功",
-        "uid" : "a4feea46b9cdc239",
+        "uid" : "5c4686307e9ec087",
         "parentUid" : "c9a8694aa281664b22b9c5863c375690",
         "status" : "passed",
         "time" : {
-          "start" : 1593770247843,
-          "stop" : 1593770248107,
-          "duration" : 264
+          "start" : 1594286653621,
+          "stop" : 1594286653883,
+          "duration" : 262
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 13300000102, 'pwd': 123456, 'expectedmsg': 'ok'}" ]
+        "parameters" : [ "{'username': 13300000102, 'pwd': 123456, 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': 'ok'}" ]
       } ],
       "uid" : "c9a8694aa281664b22b9c5863c375690"
     }, {
       "name" : "学生账号正确，密码错误登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "5510de25ab34b06a",
+        "uid" : "9b76a95ec08f4b43",
         "parentUid" : "ae6c722cde5863dc90bae817f1ecc844",
         "status" : "passed",
         "time" : {
-          "start" : 1593770248113,
-          "stop" : 1593770248336,
-          "duration" : 223
+          "start" : 1594286653886,
+          "stop" : 1594286654085,
+          "duration" : 199
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 13300000100, 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+        "parameters" : [ "{'username': 13300000100, 'pwd': 1, 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': '账户或密码错误'}" ]
       }, {
         "name" : "登录失败",
-        "uid" : "ee41a57e1f09dabc",
+        "uid" : "5812eace5a0f1b53",
         "parentUid" : "ae6c722cde5863dc90bae817f1ecc844",
         "status" : "passed",
         "time" : {
-          "start" : 1593770248348,
-          "stop" : 1593770248584,
-          "duration" : 236
+          "start" : 1594286654094,
+          "stop" : 1594286654301,
+          "duration" : 207
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 13300000102, 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+        "parameters" : [ "{'username': 13300000102, 'pwd': 'abc', 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': '账户或密码错误'}" ]
       } ],
       "uid" : "ae6c722cde5863dc90bae817f1ecc844"
     }, {
       "name" : "学生账号正确，密码为空登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "d6b0a3d8d98fe3ec",
+        "uid" : "1f254627186fa863",
         "parentUid" : "103fdfbf206b08d873cb475c7a3090de",
         "status" : "passed",
         "time" : {
-          "start" : 1593770248595,
-          "stop" : 1593770248702,
-          "duration" : 107
+          "start" : 1594286654305,
+          "stop" : 1594286654375,
+          "duration" : 70
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 13300000100, 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+        "parameters" : [ "{'username': 13300000100, 'pwd': '', 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': 'password_empty'}" ]
       } ],
       "uid" : "103fdfbf206b08d873cb475c7a3090de"
     }, {
       "name" : "学生账号为空，密码为空登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "887cf5c8d9bf6aff",
+        "uid" : "b3a636d29746a08b",
         "parentUid" : "b500ca526474d5662c4584337da0d5fa",
         "status" : "passed",
         "time" : {
-          "start" : 1593770248709,
-          "stop" : 1593770248804,
-          "duration" : 95
+          "start" : 1594286654380,
+          "stop" : 1594286654457,
+          "duration" : 77
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+        "parameters" : [ "{'username': '', 'pwd': '', 'productkey': 'aac9d32a0eed820769aa1f120e6796db', 'expectedmsg': 'uname_empty'}" ]
       } ],
       "uid" : "b500ca526474d5662c4584337da0d5fa"
     }, {
       "name" : "老师账号正确，密码正确登录",
       "children" : [ {
         "name" : "登录成功",
-        "uid" : "9f6c2ba3f43e53f1",
+        "uid" : "bc6127066da676a7",
         "parentUid" : "74c5dda1d3adc011d37ba7ffab29ddbf",
         "status" : "passed",
         "time" : {
-          "start" : 1593770248815,
-          "stop" : 1593770249121,
-          "duration" : 306
+          "start" : 1594286654460,
+          "stop" : 1594286654607,
+          "duration" : 147
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'expectedmsg': 'ok'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 'ceshi001', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'ok'}" ]
       }, {
         "name" : "登录成功",
-        "uid" : "1bceb1bac04b500b",
+        "uid" : "1f4da64949880c0a",
         "parentUid" : "74c5dda1d3adc011d37ba7ffab29ddbf",
         "status" : "passed",
         "time" : {
-          "start" : 1593770249124,
-          "stop" : 1593770249688,
-          "duration" : 564
+          "start" : 1594286654621,
+          "stop" : 1594286654772,
+          "duration" : 151
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'ceshi002', 'expectedmsg': 'ok'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'ceshi002', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'ok'}" ]
       } ],
       "uid" : "74c5dda1d3adc011d37ba7ffab29ddbf"
     }, {
       "name" : "老师账号正确，密码错误登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "4704af84224de875",
+        "uid" : "c6e7aacca83751df",
         "parentUid" : "a211abce2b8c70c2898ccb4b761cc2f2",
         "status" : "passed",
         "time" : {
-          "start" : 1593770249699,
-          "stop" : 1593770249949,
-          "duration" : 250
+          "start" : 1594286654775,
+          "stop" : 1594286654908,
+          "duration" : 133
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'expectedmsg': '账号密码错误'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': 1, 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': '账号密码错误'}" ]
       }, {
         "name" : "登录失败",
-        "uid" : "6a053d012afa0996",
+        "uid" : "8c8372b04b2bacd",
         "parentUid" : "a211abce2b8c70c2898ccb4b761cc2f2",
         "status" : "passed",
         "time" : {
-          "start" : 1593770249955,
-          "stop" : 1593770250169,
-          "duration" : 214
+          "start" : 1594286654924,
+          "stop" : 1594286655067,
+          "duration" : 143
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'abc', 'expectedmsg': '账号密码错误'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': 'abc', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': '账号密码错误'}" ]
       } ],
       "uid" : "a211abce2b8c70c2898ccb4b761cc2f2"
     }, {
       "name" : "老师账号正确，密码为空登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "a86709d3fb9fd030",
+        "uid" : "9acd5b455aafe59d",
         "parentUid" : "a5019b8920b98f4f2d0c23a4115b6fb2",
         "status" : "passed",
         "time" : {
-          "start" : 1593770250181,
-          "stop" : 1593770250379,
-          "duration" : 198
+          "start" : 1594286655076,
+          "stop" : 1594286655172,
+          "duration" : 96
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi001', 'pwd': '', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'password_empty'}" ]
       }, {
         "name" : "登录失败",
-        "uid" : "acce2e8ab3fdc05c",
+        "uid" : "e41a55e465767eaf",
         "parentUid" : "a5019b8920b98f4f2d0c23a4115b6fb2",
         "status" : "passed",
         "time" : {
-          "start" : 1593770250391,
-          "stop" : 1593770250484,
-          "duration" : 93
+          "start" : 1594286655179,
+          "stop" : 1594286655276,
+          "duration" : 97
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+        "parameters" : [ "{'username': 'kehuduanjiaoshi002', 'pwd': '', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'password_empty'}" ]
       } ],
       "uid" : "a5019b8920b98f4f2d0c23a4115b6fb2"
     }, {
       "name" : "老师账号为空，密码为空登录",
       "children" : [ {
         "name" : "登录失败",
-        "uid" : "bdd5301892b0e9a9",
+        "uid" : "eb3e61c59effbb17",
         "parentUid" : "6f9a1da3111e4e85cf78aac79a2a20cd",
         "status" : "passed",
         "time" : {
-          "start" : 1593770250488,
-          "stop" : 1593770250559,
-          "duration" : 71
+          "start" : 1594286655280,
+          "stop" : 1594286655388,
+          "duration" : 108
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'username': '', 'pwd': '', 'expectedmsg': 'uname_empty'}" ]
+        "parameters" : [ "{'username': '', 'pwd': '', 'productkey': '377eb695ceea787071a7d252def6aa4a', 'expectedmsg': 'uname_empty'}" ]
       } ],
       "uid" : "6f9a1da3111e4e85cf78aac79a2a20cd"
     } ],

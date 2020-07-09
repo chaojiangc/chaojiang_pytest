@@ -1,0 +1,106 @@
+{
+  "uid" : "7a81aefb51d471b9",
+  "name" : "登录失败",
+  "fullName" : "tests.client_songshuai.test_stulogin3#test_login",
+  "historyId" : "73046aa69ef1a4246101201a089e0e5c",
+  "time" : {
+    "start" : 1594282467224,
+    "stop" : 1594282467298,
+    "duration" : 74
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "statusTrace" : "datas = {'expectedmsg': 'password_empty', 'pwd': '', 'username': 13300000100}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"学生账号正确，密码为空登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_stuf1())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'],datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('学生账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/stulogin\"\n>           responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n\ntests\\client_songshuai\\test_stulogin3.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsongshu_code\\songshuai_api.py:111: in login_stu\n    self._printResponse(response)\nsongshu_code\\songshuai_api.py:26: in _printResponse\n    obj = response.json()\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\requests\\models.py:898: in json\n    return complexjson.loads(self.text, **kwargs)\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\__init__.py:348: in loads\n    return _default_decoder.decode(s)\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py:337: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x00000000023BFFD0>\ns = '<!DOCTYPE html>\\n<html lang=\"en\">\\n    <head>\\n        <meta charset=\"utf-8\">\\n        <meta name=\"viewport\" content=...\"message\" style=\"padding: 10px;\">\\n                Not Found            </div>\\n        </div>\\n    </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "statusTrace" : "datas = {'expectedmsg': 'password_empty', 'pwd': '', 'username': 13300000100}\n\n    @allure.feature(\"线下客户端登录业务\")\n    @allure.story(\"学生账号正确，密码为空登录\")\n    @allure.title(\"登录失败\")\n    @pytest.mark.parametrize(\"datas\", get_yaml_stuf1())\n    def test_login(datas):\n        with allure.step('获得签名sign'):\n            sig = amg.get_sign(datas['username'],datas['pwd'])\n            sgi1 = str(sig)\n    \n        with allure.step('学生账号登录'):\n            url_fomal = \"https://client.songshuai.com/api/stulogin\"\n>           responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n\ntests\\client_songshuai\\test_stulogin3.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nsongshu_code\\songshuai_api.py:111: in login_stu\n    self._printResponse(response)\nsongshu_code\\songshuai_api.py:26: in _printResponse\n    obj = response.json()\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\requests\\models.py:898: in json\n    return complexjson.loads(self.text, **kwargs)\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\__init__.py:348: in loads\n    return _default_decoder.decode(s)\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py:337: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x00000000023BFFD0>\ns = '<!DOCTYPE html>\\n<html lang=\"en\">\\n    <head>\\n        <meta charset=\"utf-8\">\\n        <meta name=\"viewport\" content=...\"message\" style=\"padding: 10px;\">\\n                Not Found            </div>\\n        </div>\\n    </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nc:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py:355: JSONDecodeError",
+    "steps" : [ {
+      "name" : "获得签名sign",
+      "time" : {
+        "start" : 1594282467224,
+        "stop" : 1594282467224,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "学生账号登录",
+      "time" : {
+        "start" : 1594282467224,
+        "stop" : 1594282467297,
+        "duration" : 73
+      },
+      "status" : "broken",
+      "statusMessage" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+      "statusTrace" : "  File \"D:\\pytest\\pytest_0613\\tests\\client_songshuai\\test_stulogin3.py\", line 21, in test_login\n    responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)\n  File \"D:\\pytest\\pytest_0613\\songshu_code\\songshuai_api.py\", line 111, in login_stu\n    self._printResponse(response)\n  File \"D:\\pytest\\pytest_0613\\songshu_code\\songshuai_api.py\", line 26, in _printResponse\n    obj = response.json()\n  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\requests\\models.py\", line 898, in json\n    return complexjson.loads(self.text, **kwargs)\n  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\__init__.py\", line 348, in loads\n    return _default_decoder.decode(s)\n  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\json\\decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "线下客户端登录业务"
+  }, {
+    "name" : "story",
+    "value" : "学生账号正确，密码为空登录"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.client_songshuai"
+  }, {
+    "name" : "suite",
+    "value" : "test_stulogin3"
+  }, {
+    "name" : "host",
+    "value" : "EZ-20180524MAOD"
+  }, {
+    "name" : "thread",
+    "value" : "10192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.client_songshuai.test_stulogin3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "datas",
+    "value" : "{'username': 13300000100, 'pwd': '', 'expectedmsg': 'password_empty'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a81aefb51d471b9.json",
+  "parameterValues" : [ "{'username': 13300000100, 'pwd': '', 'expectedmsg': 'password_empty'}" ]
+}

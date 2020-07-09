@@ -14,11 +14,11 @@ from songshu_code.songshuai_api import amg
 def test_login(datas):
 
     with allure.step('获得签名sign'):
-        sig = amg.get_sign(datas['username'],datas['pwd'])
+        sig = amg.get_sign(datas['username'], datas['pwd'], datas['productkey'])
         sgi1 = str(sig)
 
     with allure.step('学生账号登录'):
-        url_fomal = "https://client.songshuai.com/api/stulogin"
+        url_fomal = "https://client.songshuai.com/api/login"
         responses = amg.login_stu(url_fomal, datas['username'], datas['pwd'], sig=sgi1)
         res = responses.json()
         assert res['msg'] == datas['expectedmsg']
